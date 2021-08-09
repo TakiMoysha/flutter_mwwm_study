@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class WelcomeScreenBackground extends StatelessWidget {
+class LoginScreenBackground extends StatelessWidget {
   final Widget child;
 
-  const WelcomeScreenBackground({
+  const LoginScreenBackground({
     Key? key,
     required this.child,
   }) : super(key: key);
@@ -19,14 +19,14 @@ class WelcomeScreenBackground extends StatelessWidget {
           Positioned(
             top: 0,
             left: 0,
-            child: Image.asset("assets/images/main_top.png"),
+            child: Image.asset("assets/images/main_top_left.png"),
             width: size.width * 0.3,
           ),
           Positioned(
-            bottom: 0,
-            left: 0,
-            child: Image.asset("assets/images/main_bottom.png"),
-            width: size.width * 0.6,
+            bottom: -4,
+            right: -7,
+            child: Image.asset("assets/images/main_bottom_right.png"),
+            width: size.width * 0.4,
           ),
           child,
         ],
