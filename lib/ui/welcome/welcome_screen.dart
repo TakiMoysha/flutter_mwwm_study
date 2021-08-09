@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:pet_project/ui/welcome/widgets/welcome_screen_body.dart';
+import 'package:pet_project/ui/welcome/widgets/body.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override

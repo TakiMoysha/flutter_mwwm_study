@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:pet_project/ui/welcome/widgets/screen_background.dart';
+import 'package:pet_project/ui/welcome/widgets/background.dart';
 import 'package:pet_project/ui/widgets/rounded_button.dart';
 import 'package:pet_project/ui/theme/colors.dart';
 

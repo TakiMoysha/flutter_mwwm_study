@@ -21,9 +21,7 @@ class LoginScreenBody extends StatelessWidget {
         children: <Widget>[
           Text(
             "Login",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
           ),
           RoundedInputField(
             hintText: "Username",
