@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
 
-import 'package:pet_project/ui/login/widgets/login_screen_background.dart';
+import 'package:pet_project/ui/welcome/widgets/welcome_screen_background.dart';
 import 'package:pet_project/ui/widgets/rounded_button.dart';
 import 'package:pet_project/ui/theme/colors.dart';
 
 Map smallMap = new Map();
 
-class LoginScreenBody extends StatelessWidget {
-  const LoginScreenBody({
+class WelcomeScreenBody extends StatelessWidget {
+  const WelcomeScreenBody({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return LoginScreenBackground(
+    return WelcomeScreenBackground(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            "Login Page",
+            "Welcome Page",
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
@@ -32,7 +32,7 @@ class LoginScreenBody extends StatelessWidget {
             width: size.width * 0.5,
           ),
           RoundedButton(
-            text: "LOGIN",
+            text: "WELCOME",
             press: () {
               print("Nothello");
             },
