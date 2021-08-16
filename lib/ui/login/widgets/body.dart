@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:pet_project/ui/login/widgets/background.dart';
-import 'package:pet_project/ui/widgets/reunded_password_field.dart';
+import 'package:pet_project/ui/welcome/welcome_screen.dart';
+import 'package:pet_project/ui/widgets/rounded_password_field.dart';
 import 'package:pet_project/ui/widgets/rounded_button.dart';
 import 'package:pet_project/ui/theme/colors.dart';
 import 'package:pet_project/ui/widgets/rounded_input_field.dart';
@@ -52,7 +53,16 @@ class LoginScreenBody extends StatelessWidget {
                 style: TextStyle(color: kPrimaryColor),
               ),
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return WelcomeScreen();
+                      },
+                    ),
+                  );
+                },
                 child: Text(
                   "Sign Up",
                   style: TextStyle(
